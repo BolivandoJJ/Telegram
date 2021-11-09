@@ -15757,7 +15757,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         }, true, themeDelegate);
     }
 
-    private boolean sponsoredMessagesAdded;
+    private boolean sponsoredMessagesAdded = true;
     private void addSponsoredMessages(boolean animated) {
         if (sponsoredMessagesAdded || chatMode != 0 || !ChatObject.isChannel(currentChat) || currentChat.megagroup || currentChat.gigagroup || !forwardEndReached[0]) {
             return;
